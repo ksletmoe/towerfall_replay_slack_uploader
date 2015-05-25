@@ -44,7 +44,6 @@ func main() {
 	}
 }
 
-//func watchReplayDir(dbPath string, config *Config) bool {
 func watchReplayDir(dbPath string, config *Config) error {
 	if db, err := sql.Open("sqlite3", dbPath); err != nil {
 		return err
